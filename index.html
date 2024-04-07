@@ -27,7 +27,7 @@
             <nav class="header__nav">
               <ul class="header__nav-list">
                 <li class="header__list-item">
-                  <a class="header__item-link" href="#">Business areas</a>
+                  <a class="header__item-link" href="#business_areas">Business areas</a>
                 </li>
                 <li class="header__list-item">
                   <a class="header__item-link" href="#featured-images">Featured images</a>
@@ -36,11 +36,11 @@
                   <a class="header__item-link" href="#gear_cage">Gear cage</a>
                 </li>
                 <li class="header__list-item">
-                  <a class="header__item-link" href="#">Contact</a>
+                  <a class="header__item-link" href="#contact">Contact</a>
                 </li>
               </ul>
             </nav>
-            <a class="header__button btn" href="/" role="button">Get template</a>
+            <a class="header__button btn" href="/" role="button"><span>Get template</span></a>
           </div>
           <div class="header__burger-block">
             <button class="header__burger-btn" type="button">
@@ -99,13 +99,13 @@
       </section>
       <section class="activity">
         <div class="container">
-          <div class="activity__content" id="featured-images">
+          <div class="activity__content">
             <div class="activity__title-block title-box">
               <h2 class="activity__title">What we do.</h2>
               <p class="activity__subtitle subtitle-base">The areas that we're specialized in.</p>
             </div>
             <div class="activity__descriptions-cards">
-              <article class="activity__card product-card">
+              <article class="activity__card product-card" id="product_photography">
                 <div class="activity__card-text">
                   <h3>Product Photography</h3>
                   <p>
@@ -115,7 +115,7 @@
                 </div>
                 <a class="activity__card-btn primary-btn btn" href="#" role="button">Read more</a>
               </article>
-              <article class="activity__card architecture-card">
+              <article class="activity__card architecture-card" id="architecture_photography">
                 <div class="activity__card-text">
                   <h3>Architecture Photography</h3>
                   <p>
@@ -126,7 +126,7 @@
                 </div>
                 <a class="activity__card-btn primary-btn btn" href="#" role="button">Read more</a>
               </article>
-              <article class="activity__card dron-card">
+              <article class="activity__card dron-card" id="drone_photography">
                 <div class="activity__card-text">
                   <h3>Drone Photography</h3>
                   <p>
@@ -137,7 +137,7 @@
                 </div>
                 <a class="activity__card-btn primary-btn btn" href="#" role="button">Read more</a>
               </article>
-              <article class="activity__card wildlife-card">
+              <article class="activity__card wildlife-card" id="wildlife_photography">
                 <div class="activity__card-text">
                   <h3>Wildlife Photography</h3>
                   <p>
@@ -152,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="gallery gallery--japan">
+      <section class="gallery gallery--japan" id="featured-images">
         <div class="gallery__content">
           <div class="gallery__about-photo">
             <h2>Sunset at Mount Fuji</h2>
@@ -264,7 +264,7 @@
           </div>
         </div>
       </section>
-      <section class="offer">
+      <section class="offer" id="contact">
         <div class="container">
           <div class="offer__content title-box">
             <h2 class="offer__title">Need help with photography or videography?</h2>
@@ -291,19 +291,19 @@
             </div>
             <div class="footer__info-lists">
               <div class="footer__list-wrapper">
-                <h2 class="footer__list-title">Business areas</h2>
+                <h2 class="footer__list-title" id="business_areas">Business areas</h2>
                 <ul class="footer__list-business footer-list">
                   <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Product Photography</a>
+                    <a class="footer__list-link" href="#product_photography">Product Photography</a>
                   </li>
                   <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Architecture Photography</a>
+                    <a class="footer__list-link" href="#architecture_photography">Architecture Photography</a>
                   </li>
                   <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Drone Photography</a>
+                    <a class="footer__list-link" href="#drone_photography">Drone Photography</a>
                   </li>
                   <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Wildlife Photography</a>
+                    <a class="footer__list-link" href="#wildlife_photography">Wildlife Photography</a>
                   </li>
                 </ul>
               </div>
@@ -311,13 +311,13 @@
                 <h2 class="footer__list-title">Pages</h2>
                 <ul class="footer__list-pages footer-list">
                   <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Gear cage</a>
+                    <a class="footer__list-link" href="#gear_cage">Gear cage</a>
                   </li>
                   <li class="footer__list-item">
                     <a class="footer__list-link" href="#">Featured images</a>
                   </li>
                   <li class="footer__list-item">
-                    <a class="footer__list-link" href="#">Contact</a>
+                    <a class="footer__list-link" href="#contact">Contact</a>
                   </li>
                   <li class="footer__list-item">
                     <a class="footer__list-link" href="#">Style guide</a>
@@ -339,7 +339,7 @@
             </div>
             <form class="footer__subsribe-form">
               <h2 class="visually-hidden">Input for subscribe and get more information</h2>
-              <input type="email" class="footer__subscribe-input" maxlength="30" />
+              <input type="email" class="footer__subscribe-input" maxlength="40" />
               <h3 class="visually-hidden">Button for send email and subscribe</h3>
               <button class="footer__form-button" type="submit" role="button" title="send to subscribe"></button>
             </form>

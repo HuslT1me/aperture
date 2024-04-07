@@ -116,7 +116,7 @@ p:not(:last-of-type) {
 .header__button-line {
   background: var(--color-light);
   border-radius: 20px;
-  width: 20px;
+  width: 25px;
   height: 3px;
 }
 
@@ -176,7 +176,7 @@ p:not(:last-of-type) {
 
 .photo-info-list {
   display: flex;
-  column-gap: 16px;
+  gap: 16px;
 }
 
 .photo-info-list li {
@@ -459,6 +459,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+  gap: 30px;
 }
 
 .footer__logo-wrapper {
@@ -492,6 +493,7 @@ p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 55px;
+  gap: 30px;
 }
 
 .footer__subsribe-form {
@@ -535,11 +537,16 @@ p {
 .footer__soc1als-media {
   display: flex;
   justify-content: space-between;
+  row-gap: 20px;
 }
 
 .footer__list-soc1al {
   display: inline-flex;
   column-gap: 20px;
+}
+
+.footer__soc1al-links {
+  color: var(--color-gray);
 }
 
 .footer__icon-soc1al {
@@ -569,7 +576,7 @@ p {
     display: none;
   }
 
-  .promo__burger-block {
+  .header__burger-block {
     display: block;
   }
 
@@ -580,6 +587,10 @@ p {
   .clients__comanys-list {
     grid-template-columns: repeat(3, 1fr);
     row-gap: 30px;
+  }
+
+  .footer__info-lists {
+    margin-right: 50px;
   }
 }
 
@@ -608,9 +619,21 @@ p {
   .clients__comanys-list {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .footer__info-lists {
+    margin-right: 0;
+  }
 }
 
-@media (max-width: 425px) {
+@media (max-width: 640px) {
+  .gallery__content {
+    padding: 20px;
+  }
+
+  .photo-info-list {
+    flex-wrap: wrap;
+  }
+
   .photo-info,
   .gallery__about-photo {
     margin-inline: auto;
@@ -619,4 +642,53 @@ p {
   .clients__comanys-list {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .footer__more-info,
+  .footer__subscribe-block,
+  .footer__soc1als-media {
+    flex-direction: column;
+  }
+
+  .footer__info-lists {
+    flex-direction: column;
+    row-gap: 20px;
+  }
+}
+
+@media (hover: hover) {
+  .btn:hover {
+    transition: var(--transition-duration);
+    background: var(--color-gray);
+  }
+
+  .header__item-link:hover,
+  .footer__list-link:hover {
+    color: var(--color-gray);
+    transition: var(--transition-duration);
+  }
+
+  .footer__soc1al-links:hover {
+    transition: var(--transition-duration);
+    color: var(--color-light);
+  }
+}
+
+@media (hover: none) {
+  .btn:active {
+    background: var(--color-gray);
+  }
+
+  .header__item-link:active,
+  .footer__list-link:active {
+    color: var(--color-gray);
+  }
+
+  .footer__soc1al-links:active {
+    color: var(--color-light);
+  }
+}
+
+.footer__subscribe-input:focus {
+  background: var(--color-gray);
+  transition: var(--transition-duration);
 }
