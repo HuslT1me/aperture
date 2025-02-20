@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Aperture</title>
-    <link rel="stylesheet" href="./css/reset.css" />
+    <!-- <link rel="stylesheet" href="./css/reset.css" /> -->
     <link rel="stylesheet" href="./css/fonts/font.css" />
     <link rel="stylesheet" href="./css/main.css" />
   </head>
@@ -40,12 +40,11 @@
                 </li>
               </ul>
             </nav>
-            <a class="header__button btn" href="/" role="button"><span>Get template</span></a>
+            <a class="header__button btn" href="/" role="button" id="modal-button"><span>Get template</span></a>
           </div>
           <div class="header__burger-block">
             <button class="header__burger-btn" type="button">
               <span class="visually-hidden">Open menu</span>
-              <!-- <span class="header__button-line"></span> -->
             </button>
             <div class="header__burger-content">
               <nav class="header__nav">
@@ -344,24 +343,24 @@
           </div>
           <div class="footer__soc1als-media">
             <p class="footer__copyright">&copy; Aperture Photography, Inc. All rights reserved. Licensing</p>
-            <ul class="footer__list-soc1al">
-              <li class="footer__soc1al-item">
-                <a href="#" class="footer__soc1al-links">
-                  <svg class="footer__icon-soc1al">
+            <ul class="list-soc1al">
+              <li class="soc1al-item">
+                <a href="#" class="soc1al-links">
+                  <svg class="icon-soc1al">
                     <use href="./media/icons/svg-sprite.svg#twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__soc1al-item">
-                <a href="#" class="footer__soc1al-links">
-                  <svg class="footer__icon-soc1al">
+              <li class="soc1al-item">
+                <a href="#" class="soc1al-links">
+                  <svg class="icon-soc1al">
                     <use href="./media/icons/svg-sprite.svg#instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer__soc1al-item">
-                <a href="#" class="footer__soc1al-links">
-                  <svg class="footer__icon-soc1al">
+              <li class="soc1al-item">
+                <a href="#" class="soc1al-links">
+                  <svg class="icon-soc1al">
                     <use href="./media/icons/svg-sprite.svg#facebook"></use>
                   </svg>
                 </a>
@@ -371,6 +370,34 @@
         </div>
       </footer>
     </main>
+    <dialog class="dialog">
+      <div class="dialog__inner">
+        <p>contact us</p>
+        <ul class="list-soc1al">
+          <li class="soc1al-item">
+            <a href="#" class="soc1al-links">
+              <svg class="icon-soc1al">
+                <use href="./media/icons/svg-sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc1al-item">
+            <a href="#" class="soc1al-links">
+              <svg class="icon-soc1al">
+                <use href="./media/icons/svg-sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="soc1al-item">
+            <a href="#" class="soc1al-links">
+              <svg class="icon-soc1al">
+                <use href="./media/icons/svg-sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </dialog>
     <script src="./js/script.js"></script>
   </body>
 </html>
